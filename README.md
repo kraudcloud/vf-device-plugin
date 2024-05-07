@@ -12,14 +12,14 @@ after installing the plugin you get in node resources:
 
 ```yaml
 Allocatable:
-  kr-vf/eth0-00.1:                 1
-  kr-vf/eth0-00.2:                 1
-  kr-vf/eth0-00.3:                 1
-  kr-vf/eth0-00.4:                 1
-  kr-vf/eth0-00.5:                 1
-  kr-vf/eth0-00.6:                 1
-  kr-vf/eth0-00.7:                 1
-  kr-vf/eth0-01.0:                 1
+  kr-vf/eth0-vf0:                 1
+  kr-vf/eth0-vf1:                 1
+  kr-vf/eth0-vf2:                 1
+  kr-vf/eth0-vf3:                 1
+  kr-vf/eth0-vf4:                 1
+  kr-vf/eth0-vf5:                 1
+  kr-vf/eth0-vf6:                 1
+  kr-vf/eth0-vf7:                 1
 ```
 
 
@@ -28,7 +28,7 @@ which can be passed into kubevirt as
 domain:
   devices:
     hostDevices:
-    - deviceName: kr-vf/eth0-00.3
+    - deviceName: kr-vf/eth0-vf1
       name: eth0
 ```
 

@@ -39,7 +39,7 @@ func main() {
 		instance.devicePlugin = nil
 		instance.iommuGroup = dev.iommuGroup
 		instance.pcieName = dev.pciName
-		instance.resourceName = "kr-vf/" + dev.pfEthName + "-" + dev.vfNumber
+		instance.resourceName = "kr-vf/" + dev.pfEthName + "-vf" + dev.vfNumber
 		instance.socketName = api.DevicePluginPath + strings.ReplaceAll(instance.resourceName, "/", "-") + ".sock"
 		instances = append(instances, instance)
 	}
